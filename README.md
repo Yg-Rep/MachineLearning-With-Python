@@ -20,18 +20,13 @@ from sklearn.datasets import load_iris #머신러닝 모델 불러오기 (KNN-> 
 from sklearn.neighbors import KNeighborsClassifier #정확도 측정도구 불러오기
 from sklearn.metrics import accuracy_score
 
-
 #ML 안에는 데이터를 랜덤으로 섞은다음 훈련용과 테스트용으로 나눠주는 도구가 존재합니다.
 from sklearn.model_selection import train_test_split
-# train_test_split(문제,답,test_size=0.3)
 
 from sklearn.model_selection import train_test_split # train test 분리도구
 from sklearn.tree import DecisionTreeClassifier #DecisionTree모델 사용 
 
-#전체 특성확인
-X_one_hot.columns
 
-!pip install opencv-python opencv-contrib-python
 
 
 OpenCV!
@@ -56,17 +51,14 @@ https://github.com/opencv/opencv : OpenCV github 사이트
 
 https://learnopencv.com/ : 높은 수준의 결과물을 낼 수 있는 다양한 코드 제공 (프로젝트에 활용)
 
+
+!pip install opencv-python opencv-contrib-python
+
 #설치확인 및 버전확인
 import cv2
 print(cv2.__version__)
 
 
-#cvtColor():이미지의 색상을 변환하는 함수
-cvt_Chun=cv2.cvtColor(chun, cv2.COLOR_BGR2RGB)
-#축의 눈금 삭제하기
-plt.xticks([]),plt.yticks([])
-#이미지 출력
-plt.imshow(cvt_Chun)
 
 
 
